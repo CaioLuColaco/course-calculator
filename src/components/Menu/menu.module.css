@@ -1,0 +1,47 @@
+.menu {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 60px
+  }
+  
+  .boxLogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px
+  }
+  
+  .boxLogo h2 {
+    color: #0c0d0e !important;
+  }
+  
+  .menuButtons {
+    display: flex;
+    align-items: center;
+    gap: 20px
+  }
+  
+  .menuButtons select{
+    background-color: #0c0d0e;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .menuButtons select:hover{
+    opacity: 0.8;
+    cursor: pointer
+  }
+  
+  .expand{
+    color: white;
+  }
+  
