@@ -1,0 +1,266 @@
+{
+  "disciplines": {
+    "producao_de_trabalhos_cientificos": 
+      { "label": "PRODUÇÃO DE TRABALHOS CIENTÍFICOS", "semester": 1 }
+    ,
+    "introducao_a_engenharia_ambiental_e_sanitaria": {
+      "label": "INTRODUÇÃO À ENGENHARIA AMBIENTAL E SANITÁRIA",
+      "semester": 1
+    },
+    "ecologia_geral": { "label": "ECOLOGIA GERAL", "semester": 1 },
+    "calculo_1": { "label": "CÁLCULO 1", "semester": 1 },
+    "biologia_aplicada": { "label": "BIOLOGIA APLICADA", "semester": 1 },
+    "probabilidade_e_estatistica": 
+      { "label": "PROBABILIDADE E ESTATÍSTICA", "semester": 1 }
+    ,
+    "geologia_aplicada_a_engenharia": 
+      { "label": "GEOLOGIA APLICADA À ENGENHARIA", "semester": 2 }
+    ,
+    "ecossistemas_marinhos_e_ambientes_costeiros": 
+      { "label": "ECOSSISTEMAS MARINHOS E AMBIENTES COSTEIROS", "semester": 2 }
+    ,
+    "ecossistemas_do_semiarido": 
+      { "label": "ECOSSISTEMAS DO SEMI-ÁRIDO", "semester": 2 }
+    ,
+    "calculo_2": { "label": "CÁLCULO 2", "semester": 2 },
+    "fisica_1": { "label": "FÍSICA 1", "semester": 2 },
+    "algebra_linear": { "label": "ÁLGEBRA LINEAR", "semester": 2 },
+    "climatologia_e_meteorologia": 
+      { "label": "CLIMATOLOGIA E METEOROLOGIA", "semester": 3 }
+    ,
+    "fisica_ambiental": { "label": "FÍSICA AMBIENTAL", "semester": 3 },
+    "energias_alterantivas": 
+      { "label": "ENERGIAS ALTERNATIVAS", "semester": 3 }
+    ,
+    "calculo_3": { "label": "CALCULO 3", "semester": 3 },
+    "fisica_2": { "label": "FÍSICA 2", "semester": 3 },
+    "quimica_tecnologica": { "label": "QUÍMICA TECNOLÓGICA", "semester": 3 },
+    "qualidade_e_poluicao_do_solo": 
+      { "label": "QUALIDADE E POLUIÇÃO DO SOLO", "semester": 4 }
+    ,
+    "qualidade_e_poluicao_do_ar": 
+      { "label": "QUALIDADE E POLUIÇÃO DO AR", "semester": 4 }
+    ,
+    "qualidade_e_poluicao_da_agua": 
+      { "label": "QUALIDADE E POLUIÇÃO DA ÁGUA", "semester": 4 }
+    ,
+    "mecanica_dos_fluidos": 
+      { "label": "MECÂNICA DOS FLUIDOS", "semester": 4 }
+    ,
+    "algoritmo_e_programacao_de_computadores": 
+      { "label": "ALGORÍTMO E PROGRAMAÇÃO DE COMPUTADORES", "semester": 4 }
+    ,
+    "materiais_de_engenharia": 
+      { "label": "MATERIAIS DE ENGENHARIA", "semester": 4 }
+    ,
+    "geotecnia_ambiental": { "label": "GEOTECNIA AMBIENTAL", "semester": 5 },
+    "expressao_grafica": { "label": "EXPRESSÃO GRÁFICA", "semester": 5 },
+    "topografica": { "label": "TOPOGRÁFICA", "semester": 5 },
+    "hidraulica": { "label": "HIDRÁULICA", "semester": 5 },
+    "calculo_numero_e_grafico": 
+      { "label": "CÁLCULO NUMÉRICO E GRÁFICO", "semester": 5 }
+    ,
+    "recuperacao_de_areas_degradadas": 
+      { "label": "RECUPERAÇÃO DAS ÁREAS DEGRADADAS", "semester": 5 }
+    ,
+    "residuos_solidos_e_perigosos": 
+      { "label": "RESÍDUOS SÓLIDOS E PERIGOSOS", "semester": 6 }
+    ,
+    "hidrologia": { "label": "HIDROLOGIA", "semester": 6 },
+    "tecnicas_de_tratamento_de_aguas_efluentes": 
+      { "label": "TÉCNICAS DE TRATAMENTOS DE ÁGUAS EFLUENTES", "semester": 6 }
+    ,
+    "planejamento_dos_recusos_hidricos": 
+      { "label": "PLANEJAMENTO DOS RECUSOS HÍDRICOS", "semester": 6 }
+    ,
+    "projetos_de_saneamento_ambiental": 
+      { "label": "PROJETOS DE SANEAMENTO AMBIENTAL", "semester": 6 }
+    ,
+    "redes_de_agua_e_esgoto": 
+      { "label": "REDES DE ÁGUA E ESGOTO", "semester": 6 }
+    ,
+    "etica_cidadania_e_pratica_profissional": 
+      { "label": "ÉTICA, CIDADANIA E PRÁTICA PROFISSIONAL", "semester": 7 }
+    ,
+    "legislacao_ambiental": 
+      { "label": "LEGISLAÇÃO AMBIENTAL", "semester": 7 }
+    ,
+    "educacao_ambiental": { "label": "EDUCAÇÃO AMBIENTAL", "semester": 7 },
+    "modelage_matematica_aplicada_ao_meio_ambientes": 
+      {
+        "label": "MODELAGEM MATEMÁTICA APLICADA AO MEIO AMBIENTE",
+        "semester": 7
+      }
+    ,
+    "avaliacao_de_mitigacao_de_impacto_ambiental": 
+      { "label": "AVALIAÇÃO DE MITIGAÇÃO DE IMPACTO AMBIENTAL", "semester": 7 }
+    ,
+    "sistema_de_informacao_geografica": 
+      { "label": "SISTEMA DE INFORMAÇÃO GEOGRÁFICA - SIG", "semester": 7 }
+    ,
+    "seguranca_e_saude_ocupacional": 
+      { "label": "SEGURANÇA E SAÚDE OCUPACIONAL", "semester": 8 }
+    ,
+    "elementos_de_economia": 
+      { "label": "ELEMENTOS DE ECONOMIA", "semester": 8 }
+    ,
+    "certificacao_e_auditoria_ambiental": 
+      { "label": "CERTIFICAÇÃO E AUDITORIA AMBIENTAL", "semester": 8 }
+    ,
+    "analise_de_risco": { "label": "ANÁLISE DE RISCO", "semester": 8 },
+    "saude_ambiental": { "label": "SAÚDE AMBIENTAL", "semester": 8 },
+    "desenvolvimento_sustentavel": 
+      { "label": "DESENVOLVIMENTO SUSTENTÁVEL", "semester": 8 }
+    ,
+    "administracao_empreendedorismo_e_inovacao": 
+      { "label": "ADMINISTRAÇÃO, EMPREENDEDORISMO E INOVAÇÃO", "semester": 9 }
+    ,
+    "planejamento_e_gestao_de_projetos_e_obras": 
+      { "label": "PLANEJAMENTO E GESTÃO DE PROJETOS E OBRAS", "semester": 9 }
+    ,
+    "trabalho_de_conclusao_de_curso_1": 
+      { "label": "TRABALHO DE CONCLUSÃO DE CURSO 1", "semester": 9 }
+    ,
+    "estagio_de_supervisionado_em_engenharia_ambiental": 
+      { "label": "ESTÁGIO DE SUPORTE EM ENGENHARIA AMBIENTAL", "semester": 9 }
+    ,
+    "atividade_de_estagio_em_engenharia_ambiental": 
+      {
+        "label": "ATIVIDADE DE ESTÁGIO EM ENGENHARIA AMBIENTAL",
+        "semester": 9
+      }
+    ,
+    "engenharia_economica": 
+      { "label": "ENGENHARIA ECONÔMICA", "semester": 10 }
+    ,
+    "gerenciamento_de_custos": 
+      { "label": "GERENCIAMENTO DE CUSTOS", "semester": 10 }
+    ,
+    "trabalho_de_conclusao_de_curso_2": 
+      { "label": "TRABALHO DE CONCLUSÃO DE CURSO 2", "semester": 10 }
+    ,
+    "sistema_de_apoio_a_decisao": 
+      { "label": "SISTEMA DE APOIO A DECISÃO", "semester": 10 }
+    
+  },
+  "dependencies": {
+    "producao_de_trabalhos_cientificos": [],
+    "introducao_a_engenharia_ambiental_e_sanitaria": [],
+    "ecologia_geral": [],
+    "calculo_1": [],
+    "biologia_aplicada": [],
+    "probabilidade_e_estatistica": [],
+
+    "geologia_aplicada_a_engenharia": ["ecologia_geral"],
+    "ecossistemas_marinhos_e_ambientes_costeiros": ["ecologia_geral"],
+    "ecossistemas_do_semiarido": ["ecologia_geral"],
+    "calculo_2": ["calculo_1"],
+    "fisica_1": ["calculo_1"],
+    "algebra_linear": [],
+
+    "climatologia_e_meteorologia": [
+      "geologia_aplicada_a_engenharia",
+      "ecossistemas_do_semiarido"
+    ],
+    "fisica_ambiental": ["fisica_1"],
+    "energias_alterantivas": ["fisica_1"],
+    "calculo_3": ["calculo_2", "algebra_linear"],
+    "fisica_2": ["fisica_1"],
+    "quimica_tecnologica": ["probabilidade_e_estatistica"],
+
+    "qualidade_e_poluicao_do_solo": [
+      "climatologia_e_meteorologia",
+      "quimica_tecnologica"
+    ],
+    "qualidade_e_poluicao_do_ar": [
+      "climatologia_e_meteorologia",
+      "quimica_tecnologica",
+      "fisica_ambiental",
+      "ecossistemas_marinhos_e_ambientes_costeiros"
+    ],
+    "qualidade_e_poluicao_da_agua": [
+      "climatologia_e_meteorologia",
+      "quimica_tecnologica"
+    ],
+    "mecanica_dos_fluidos": ["calculo_3", "fisica_2"],
+    "algoritmo_e_programacao_de_computadores": [],
+    "materiais_de_engenharia": ["quimica_tecnologica"],
+
+    "geotecnia_ambiental": ["qualidade_e_poluicao_do_solo", "calculo_2"],
+    "expressao_grafica": ["calculo_2"],
+    "topografica": ["calculo_2"],
+    "hidraulica": ["mecanica_dos_fluidos"],
+    "calculo_numero_e_grafico": [
+      "calculo_3",
+      "algoritmo_e_programacao_de_computadores"
+    ],
+    "recuperacao_de_areas_degradadas": [
+      "biologia_aplicada",
+      "qualidade_e_poluicao_do_solo"
+    ],
+
+    "residuos_solidos_e_perigosos": ["geotecnia_ambiental"],
+    "hidrologia": ["qualidade_e_poluicao_da_agua"],
+    "tecnicas_de_tratamento_de_aguas_efluentes": [
+      "qualidade_e_poluicao_da_agua"
+    ],
+    "planejamento_dos_recusos_hidricos": ["hidraulica", "expressao_grafica"],
+    "projetos_de_saneamento_ambiental": ["hidraulica", "expressao_grafica"],
+    "redes_de_agua_e_esgoto": ["hidraulica", "expressao_grafica"],
+
+    "etica_cidadania_e_pratica_profissional": [
+      "producao_de_trabalhos_cientificos",
+      "introducao_a_engenharia_ambiental_e_sanitaria"
+    ],
+    "legislacao_ambiental": [
+      "producao_de_trabalhos_cientificos",
+      "introducao_a_engenharia_ambiental_e_sanitaria"
+    ],
+    "educacao_ambiental": [
+      "producao_de_trabalhos_cientificos",
+      "introducao_a_engenharia_ambiental_e_sanitaria"
+    ],
+    "modelage_matematica_aplicada_ao_meio_ambientes": [
+      "projetos_de_saneamento_ambiental",
+      "calculo_numero_e_grafico"
+    ],
+    "avaliacao_de_mitigacao_de_impacto_ambiental": [
+      "projetos_de_saneamento_ambiental"
+    ],
+    "sistema_de_informacao_geografica": ["projetos_de_saneamento_ambiental"],
+
+    "seguranca_e_saude_ocupacional": [
+      "legislacao_ambiental",
+      "educacao_ambiental"
+    ],
+    "elementos_de_economia": [],
+    "certificacao_e_auditoria_ambiental": ["legislacao_ambiental"],
+    "analise_de_risco": ["legislacao_ambiental"],
+    "saude_ambiental": ["legislacao_ambiental", "educacao_ambiental"],
+    "desenvolvimento_sustentavel": [
+      "legislacao_ambiental",
+      "educacao_ambiental"
+    ],
+
+    "administracao_empreendedorismo_e_inovacao": [
+      "elementos_de_economia",
+      "desenvolvimento_sustentavel",
+      "projetos_de_saneamento_ambiental"
+    ],
+    "planejamento_e_gestao_de_projetos_e_obras": [
+      "elementos_de_economia",
+      "desenvolvimento_sustentavel",
+      "projetos_de_saneamento_ambiental"
+    ],
+    "trabalho_de_conclusao_de_curso_1": ["analise_de_risco"],
+    "estagio_de_supervisionado_em_engenharia_ambiental": [
+      "projetos_de_saneamento_ambiental"
+    ],
+    "atividade_de_estagio_em_engenharia_ambiental": [],
+
+    "engenharia_economica": ["administracao_empreendedorismo_e_inovacao"],
+    "gerenciamento_de_custos": ["planejamento_e_gestao_de_projetos_e_obras"],
+    "trabalho_de_conclusao_de_curso_2": ["trabalho_de_conclusao_de_curso_1"],
+    "sistema_de_apoio_a_decisao": ["analise_de_risco"]
+  }
+}
