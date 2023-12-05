@@ -1,0 +1,30 @@
+.responseContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.responseContainer h1 {
+    margin-bottom: 20px
+}
+
+.semestresContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    font-weight: bold;
+    gap: 10px
+}
+
+.coursesContainer {
+    display: flex;
+    font-size: 11px;
+    display: flex
+}
+
+.coursesContainer p{
+    margin-right: 10px
+}
