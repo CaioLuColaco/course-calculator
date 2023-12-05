@@ -35,6 +35,32 @@ class Graph {
     );
   }
 
+  dfs(vertex, visited, stack) {
+    visited[vertex] = true;
+
+    const neighbors = this.graph.get(vertex);
+    for (const neighbor of neighbors) {
+      if (!visited[neighbor]) {
+        this.dfs(neighbor, visited, stack);
+      }
+    }
+
+    stack.push(vertex);
+  }
+
+  topologicalSort() {
+    const visited = {};
+    const stack = [];
+
+    for (const vertex of this.graph.keys()) {
+      if (!visited[vertex]) {
+        this.dfs(vertex, visited, stack);
+      }
+    }
+
+    return stack.reverse();
+  }
+
   planSemester(coursesTaken, maxCourses) {
     const availableCourses = [];
 
@@ -60,7 +86,7 @@ class Graph {
 
   planSequences(coursesTaken, maxCoursesPerSemester) {
     const sequences = [];
-    let remainingCourses = [...this.graph.keys()];
+    let remainingCourses = this.topologicalSort();
 
     while (remainingCourses.length > 0) {
       const semesterPlan = this.planSemester(
@@ -82,10 +108,7 @@ class Graph {
   }
 
   planEnrollment(coursesTaken, maxCoursesPerSemester) {
-    const sequences = curriculum.planSequences(
-      coursesTaken,
-      maxCoursesPerSemester
-    );
+    const sequences = this.planSequences(coursesTaken, maxCoursesPerSemester);
     return sequences;
   }
 }
