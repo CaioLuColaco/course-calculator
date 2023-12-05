@@ -24,14 +24,14 @@ export default function Menu({course, setCourse, quantity, setQuantity}) {
                 </select>
 
                 <select value={quantity} onChange={ e => setQuantity(e.target.value)}>
-                    <option value="3">3 Cadeiras</option>
-                    <option value="4">4 Cadeiras</option>
-                    <option value="5">5 Cadeiras</option>
-                    <option value="6">6 Cadeiras</option>
-                    <option value="7">7 Cadeiras</option>
-                    <option value="8">8 Cadeiras</option>
-                    <option value="9">9 Cadeiras</option>
-                    <option value="10">10 Cadeiras</option>
+                    <option value={3}>3 Cadeiras</option>
+                    <option value={4}>4 Cadeiras</option>
+                    <option value={5}>5 Cadeiras</option>
+                    <option value={6}>6 Cadeiras</option>
+                    <option value={7}>7 Cadeiras</option>
+                    <option value={8}>8 Cadeiras</option>
+                    <option value={9}>9 Cadeiras</option>
+                    <option value={10}>10 Cadeiras</option>
                 </select>
             
             </div>

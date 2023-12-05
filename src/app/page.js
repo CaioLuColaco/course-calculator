@@ -7,7 +7,7 @@ import Grafo from "@/components/Grafo";
 
 export default function Home() {
   const [course, setCourse] = useState("EngenhariaAmbiental");
-  const [quantity, setQuantity] = useState("5");
+  const [quantity, setQuantity] = useState(5);
 
   return (
     <main className={styles.main}>

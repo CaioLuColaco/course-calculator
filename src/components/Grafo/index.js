@@ -3,10 +3,13 @@ import Graph from "../../models/Graph.js";
 import curriculumData from "../../services/courseCurriculum.json"
 import styles from "./grafos.module.css"
 import CytoscapeComponent from "react-cytoscapejs";
+import ResponseGraph from "../ResponseGraph/index.js";
 
 export default function Grafo({quantity}) {
 
     const [selectedNodes, setSelectedNodes] = useState([]);
+    const [responseView, setResponseView] = useState(false);
+    const [courses, setCourses] = useState(false);
 
     const nodes = Object.keys(curriculumData.disciplines).map((id, index) => ({
         data: { id, label: curriculumData.disciplines[id].label },
@@ -62,7 +65,10 @@ export default function Grafo({quantity}) {
 
     const handleCalculate = () => {
         console.log(quantity)
-        console.log(">>>>>>", curriculum.planEnrollment(selectedNodes, quantity));
+        const grade = curriculum.planEnrollment(selectedNodes, quantity)
+        console.log(">>>>>>", grade);
+        setCourses(grade)
+        setResponseView(true)
     }
 
     const cytoscapeStylesheet = [
@@ -100,18 +106,24 @@ export default function Grafo({quantity}) {
 
     return (
         <div className={styles.grafoContainer}>
-            <p>Segure Shift para múltipla seleção</p>
-            <CytoscapeComponent
-                elements={newElements}
-                cy={(cy) => {
-                    cy.on("select", handleNodeSelection);
-                }}
-                stylesheet={cytoscapeStylesheet}
-                pan={{ x: 250, y: 0 }}
-            />
-            <div className={styles.buttonCalculator}>
-                <button onClick={handleCalculate}>Calcular</button>
-            </div>
+            { !responseView && (
+                <div>
+                    <p>Segure Shift para múltipla seleção</p>
+                    <CytoscapeComponent
+                        elements={newElements}
+                        cy={(cy) => {
+                            cy.on("select", handleNodeSelection);
+                        }}
+                        stylesheet={cytoscapeStylesheet}
+                        pan={{ x: 250, y: 0 }}
+                    />
+                    <div className={styles.buttonCalculator}>
+                        <button onClick={handleCalculate}>Calcular</button>
+                    </div>
+                </div>
+            )
+            }
+            {responseView && <ResponseGraph semestres={courses}/>}
         </div>
     )
 }
