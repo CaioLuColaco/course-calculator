@@ -65,7 +65,7 @@ export default function Grafo({quantity}) {
 
     const handleCalculate = () => {
         console.log(quantity)
-        const grade = curriculum.planEnrollment(selectedNodes, quantity)
+        const grade = curriculum.planEnrollment(selectedNodes, Number(quantity))
         console.log(">>>>>>", grade);
         setCourses(grade)
         setResponseView(true)
@@ -107,8 +107,8 @@ export default function Grafo({quantity}) {
     return (
         <div className={styles.grafoContainer}>
             { !responseView && (
-                <div>
-                    <p>Segure Shift para múltipla seleção</p>
+                <div className={styles.grafoBox}>
+                    {/* <p>Segure Shift para múltipla seleção</p> */}
                     <CytoscapeComponent
                         elements={newElements}
                         cy={(cy) => {
