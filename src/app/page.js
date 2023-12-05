@@ -40,14 +40,19 @@ export default function Home() {
   });
 
   const newElements = [...nodes, ...edges];
-  // const curriculum = new Graph();
+  const curriculum = new Graph();
 
-  // const courseCurriculum = require("../services/courseCurriculum.json");
-
-  // for (const course in courseCurriculum.disciplines) {
-  //   console.log(course);
-  //   curriculum.addVertex(course);
-  // }
+  // Create nodes
+  for (const course in curriculumData.disciplines) {
+    curriculum.addVertex(course);
+  }
+  // Create edges
+  for (const course in curriculumData.dependencies) {
+    const dependencies = curriculumData.dependencies[course];
+    if (dependencies?.length) {
+      curriculum.addEdge(course, dependencies);
+    }
+  }
 
   const handleNodeSelection = (event) => {
     // Obtém os nós selecionados no evento
@@ -55,32 +60,12 @@ export default function Home() {
 
     // Obtém os IDs dos nós selecionados
     const selectedIds = selected.map((node) => node.id());
-
+    // console.log(selected.map((node) => node.id()));
     // Atualiza o estado dos nós selecionados
+    console.log(">>>>>>", curriculum.planEnrollment(selectedIds, 5));
     setSelectedNodes(selectedIds);
   };
 
-  const elements = [
-    {
-      data: { id: "one", label: "Node 1" },
-      position: { x: 40, y: 140 },
-    },
-    {
-      data: { id: "two", label: "Node 2" },
-      position: { x: 140, y: 40 },
-    },
-    { data: { id: "three", label: "Node 3" }, position: { x: 240, y: 140 } },
-    {
-      data: { source: "one", target: "two", label: "Edge from Node1 to Node2" },
-    },
-    {
-      data: {
-        source: "two",
-        target: "three",
-        label: "Edge from Node2 to Node3",
-      },
-    },
-  ];
   return (
     <main className={styles.main}>
       <Menu

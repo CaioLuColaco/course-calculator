@@ -4,7 +4,7 @@ class Graph {
   }
 
   addVertex(vertex) {
-    this.graph.set(vertex, { neighbors: [], visited: false });
+    this.graph.set(vertex, []);
   }
 
   addEdge(vertex, prerequisites) {
@@ -14,7 +14,7 @@ class Graph {
     }
     prerequisites.forEach((prerequisite) => {
       if (this.graph.has(prerequisite)) {
-        this.graph.get(vertex).neighbors.push(prerequisite);
+        this.graph.get(vertex).push(prerequisite);
       } else {
         console.error(
           `Prerequisite '${prerequisite}' for '${vertex}' does not exist!`
@@ -23,28 +23,13 @@ class Graph {
     });
   }
 
-  dfs(vertex, order) {
-    this.graph.get(vertex).visited = true;
-    this.graph.get(vertex).neighbors.forEach((neighbor) => {
-      if (!this.graph.get(neighbor).visited) {
-        this.dfs(neighbor, order);
-      }
-    });
-    order.push(vertex);
-  }
-
-  topologicalSort() {
-    const order = [];
-    this.graph.forEach((value, vertex) => {
-      if (!value.visited) {
-        this.dfs(vertex, order);
-      }
-    });
-    return order.reverse(); // Reverse to get topological order
-  }
-
   canTakeCourse(coursesTaken, course) {
-    const prerequisites = this.graph.get(course).neighbors;
+    const prerequisites = this.graph.get(course);
+    if (!prerequisites) {
+      // Discipline does not exist in the graph (could be a discipline without prerequisites)
+      return true;
+    }
+
     return prerequisites.every((prerequisite) =>
       coursesTaken.includes(prerequisite)
     );
@@ -53,16 +38,19 @@ class Graph {
   planSemester(coursesTaken, maxCourses) {
     const availableCourses = [];
 
-    const topologicalOrder = this.topologicalSort();
-
-    for (const course of topologicalOrder) {
+    for (const [course, prerequisites] of this.graph.entries()) {
       if (
         !coursesTaken.includes(course) &&
         this.canTakeCourse(coursesTaken, course)
       ) {
-        availableCourses.push(course);
-        if (availableCourses.length === maxCourses) {
-          break;
+        const canTake = prerequisites.every((prerequisite) =>
+          coursesTaken.includes(prerequisite)
+        );
+        if (canTake) {
+          availableCourses.push(course);
+          if (availableCourses.length === maxCourses) {
+            break;
+          }
         }
       }
     }
@@ -90,6 +78,14 @@ class Graph {
       );
     }
 
+    return sequences;
+  }
+
+  planEnrollment(coursesTaken, maxCoursesPerSemester) {
+    const sequences = curriculum.planSequences(
+      coursesTaken,
+      maxCoursesPerSemester
+    );
     return sequences;
   }
 }
